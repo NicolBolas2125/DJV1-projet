@@ -41,6 +41,7 @@ public class Player : MonoBehaviour
         }
 
         UnityEngine.Vector3 movement = new UnityEngine.Vector3(right, 0f, up);
+        movement.Normalize();
         transform.position = transform.position + Time.deltaTime * speed * movement;
     }
 }
