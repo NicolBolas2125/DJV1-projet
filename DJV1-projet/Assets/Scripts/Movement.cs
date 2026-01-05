@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] private GameObject tombe;
     public bool _meeting;
     public int id;
     public bool _canKill;
@@ -12,6 +13,8 @@ public class Movement : MonoBehaviour
     public void Mort()
     {
         Debug.Log("Death");
+        Instantiate(tombe, transform.position,transform.rotation);
+        gameObject.SetActive(false);
     }
 
 

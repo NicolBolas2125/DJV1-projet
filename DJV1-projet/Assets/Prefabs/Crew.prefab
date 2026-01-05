@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f865dad4425a2142b1fc42336224a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tombe: {fileID: 6053571943242681204, guid: c6c948ab21292e842b92745e16df048e, type: 3}
   _meeting: 0
   id: 0
   _canKill: 0

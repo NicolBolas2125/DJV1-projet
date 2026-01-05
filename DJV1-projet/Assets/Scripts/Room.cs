@@ -84,7 +84,7 @@ public class Room : MonoBehaviour
                         {
                             if (accesPNJs.StatusPNJs[i] == 2)
                             {
-                                accesPNJs.GetComponent<Movement>().Kill();
+                                accesPNJs.PNJs[i].GetComponent<Movement>().Kill();
                             }
                         }
                     }
