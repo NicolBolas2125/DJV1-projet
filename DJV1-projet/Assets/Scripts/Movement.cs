@@ -15,8 +15,12 @@ public class Movement : MonoBehaviour
     }
 
 
-
-    public IEnumerator KillCooldown()
+    // Je sais pas pourquoi il ne veut pas me laisser appeler directement ma coroutine dans bouton donc je fais une fonction
+    public void Kill()
+    {
+        StartCoroutine(KillCooldown());
+    }
+    private IEnumerator KillCooldown()
     {
         _canKill = false;
         yield return new WaitForSeconds(20f);
