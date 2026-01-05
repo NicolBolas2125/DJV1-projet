@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    private Collider[] colliders = new Collider[16];
+[SerializeField] private GameObject player;
 
     //Permet de gérer les rôles (0 = mort, 1 = crewmate, 2 = imposteur)
     public int[] StatusPNJs = new int[16];
@@ -22,7 +22,6 @@ public class Button : MonoBehaviour
         {
             imp2 = Random.Range(0,17);
         }
-        Debug.Log(imp1);
         for (int i = 0; i < 16; i++)
         {
             if (i == imp1 || i == imp2)
@@ -99,15 +98,9 @@ public class Button : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Scan");
-            int size = Physics.OverlapSphereNonAlloc(transform.position, 4f, colliders);
-            for (int i = 0; i < size; i = i + 1)
+            if (Vector3.Distance(player.transform.position, transform.position) <= 3f)
             {
-                if (colliders[i].TryGetComponent<Player>(out var player))
-                {
-                    Debug.Log("Meeting");
-                    callMeeting();
-                }
+                callMeeting();
             }
         }
     }
