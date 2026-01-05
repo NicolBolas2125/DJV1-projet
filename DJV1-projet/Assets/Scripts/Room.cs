@@ -9,10 +9,9 @@ public class Room : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject bouton;
     private Button accesPNJs;
-    private bool[] present = new bool[16];
-    private int crewCount = 0;
-    private int impCount = 0;
-    [SerializeField] private Collider[] colliders = new Collider[32];
+    [SerializeField] private bool[] present = new bool[16];
+    [SerializeField] private int crewCount = 0;
+    [SerializeField] private int impCount = 0;
     private bool _test = true;
     // Start is called before the first frame update
     void Awake()
@@ -34,19 +33,7 @@ public class Room : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent<Movement>(out var pnj)){
-            if (accesPNJs.StatusPNJs[pnj.id] == 1)
-            {
-                crewCount += 1;
-            }
-            else
-            {
-                if (accesPNJs.StatusPNJs[pnj.id] == 2)
-                {
-                    impCount += 1;
-                }
-            }
             present[pnj.id] = true;
-            Debug.Log(pnj.id);
         }
     }
 
@@ -54,19 +41,7 @@ public class Room : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         if (other.TryGetComponent<Movement>(out var pnj)){
-            if (accesPNJs.StatusPNJs[pnj.id] == 1)
-            {
-                crewCount -= 1;
-            }
-            else
-            {
-                if (accesPNJs.StatusPNJs[pnj.id] == 2)
-                {
-                    impCount -= 1;
-                }
-            }
             present[pnj.id] = false;
-            Debug.Log(pnj.id);
         }
     }
 
@@ -75,8 +50,24 @@ public class Room : MonoBehaviour
     {
         if (_test)
         {
+            impCount = 0;
+            crewCount = 0;
+            for (int i = 0; i < 16; i++)
+            {
+                if (present[i])
+                {
+                    if (accesPNJs.StatusPNJs[i] == 1)
+                    {
+                        crewCount += 1;
+                    }
+                    if (accesPNJs.StatusPNJs[i] == 2)
+                    {
+                        impCount += 1;
+                    }
+                }
+            }
             StartCoroutine(WaitTestKill());
-            if (crewCount <= impCount && crewCount != 0)
+            if (crewCount <= impCount && crewCount != 0 && Vector3.Distance(player.transform.position, transform.position) >= 10f)
             {
                 for (int i = 0; i < 16; i++)
                 {

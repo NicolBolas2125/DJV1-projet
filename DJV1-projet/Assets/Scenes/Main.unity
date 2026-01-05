@@ -390,6 +390,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627062662}
     m_Modifications:
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     - target: {fileID: 4015073053840736199, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
       propertyPath: m_Name
       value: Room4 (1)
@@ -722,6 +730,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1015,6 +1031,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1077,6 +1101,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1139,6 +1171,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1479,6 +1519,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1695,7 +1743,7 @@ Transform:
   m_GameObject: {fileID: 1424503257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.39, y: 0, z: -4.97}
+  m_LocalPosition: {x: 1.8, y: 0, z: -5.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1816,6 +1864,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room2
       objectReference: {fileID: 0}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2375,6 +2431,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room3
       objectReference: {fileID: 0}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2404,39 +2468,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1424503257}
   bouton: {fileID: 1610645553}
-  colliders:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  present: 00000000000000000000000000000000
+  crewCount: 0
+  impCount: 0
 --- !u!135 &1861156237
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2466,6 +2500,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627062662}
     m_Modifications:
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
     - target: {fileID: 4015073053840736199, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
       propertyPath: m_Name
       value: Room4 (2)
@@ -2741,9 +2783,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 627062662}
     m_Modifications:
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: bouton
+      value: 
+      objectReference: {fileID: 1610645553}
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1424503257}
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4015073053840736199, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
       propertyPath: m_Name
       value: Room4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7500740946932706107, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9200688531079393323, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
       propertyPath: m_LocalPosition.x
