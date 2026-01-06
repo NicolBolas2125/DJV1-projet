@@ -168,7 +168,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e08488e584efa94d9a7644c370e6f8f, type: 2}
+  - {fileID: 2100000, guid: 2c0ab31e5a992a247a596e781c9defc4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -225,10 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f865dad4425a2142b1fc42336224a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tombe: {fileID: 6053571943242681204, guid: c6c948ab21292e842b92745e16df048e, type: 3}
-  _meeting: 0
   id: 0
-  _canKill: 0
+  namePNJ: {fileID: 53975011100485886}
   agent: {fileID: 0}
   rooms:
   - {x: 8.5, y: 0, z: 3}
@@ -241,7 +239,8 @@ MonoBehaviour:
   - {x: -6.5, y: 0, z: 18}
   - {x: 23.5, y: 0, z: 18}
   - {x: 38.5, y: 0, z: -27}
-  namePNJ: {fileID: 53975011100485886}
+  tombe: {fileID: 6053571943242681204, guid: c6c948ab21292e842b92745e16df048e, type: 3}
+  _meeting: 0
 --- !u!54 &3725524090074826639
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -6,22 +6,17 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
+    [Header("Objets servant à calculer / controller les scans")]
     [SerializeField] private GameObject player;
-    [SerializeField] private GameObject bouton;
+    [SerializeField] private GameObject GameHub;
     private Game game;
+
+    [Header("Objets personels pour le scan")]
     [SerializeField] private bool[] present = new bool[16];
     [SerializeField] private int crewCount = 0;
     [SerializeField] private int impCount = 0;
     private bool _test = true;
-    // Start is called before the first frame update
-    void Awake()
-    {
-        game = bouton.GetComponent<Game>();
-        for (int i = 0; i < 16; i++)
-        {
-            present[i] = false;
-        }
-    }
+
 
     private IEnumerator WaitTestKill()
     {
@@ -53,7 +48,14 @@ public class Room : MonoBehaviour
         }
     }
 
-
+    void Awake()
+    {
+        game = GameHub.GetComponent<Game>();
+        for (int i = 0; i < 16; i++)
+        {
+            present[i] = false;
+        }
+    }
 
     // Update is called once per frame
     void Update()

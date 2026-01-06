@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Game : MonoBehaviour
 {
+    [Header("Elements de gestion du jeu")]
     [SerializeField] private GameObject player;
 
     //Permet de gérer les rôles (0 = mort, 1 = crewmate, 2 = imposteur)
@@ -16,9 +17,11 @@ public class Game : MonoBehaviour
     [SerializeField] private GameObject imp;
     [SerializeField] private GameObject crew;
 
+    [Header("UI")]
     //Champ pour le vote
     [SerializeField] public GameObject ui;
 
+    [Header("Permet de contrôler si on peut faire certaines actions")]
     private bool _canMeeting = true;
     public bool _canKill;
 

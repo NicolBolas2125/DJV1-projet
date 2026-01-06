@@ -644,6 +644,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     - target: {fileID: 4015073053840736199, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
       propertyPath: m_Name
       value: Room4 (1)
@@ -1133,6 +1137,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1568,6 +1576,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1638,6 +1650,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1708,6 +1724,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2239,6 +2259,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2663,16 +2687,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 6613191631690020734, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4860648071991903553, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1861156236}
-    - targetCorrespondingSourceObject: {fileID: 4860648071991903553, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1861156237}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
 --- !u!4 &1446792840 stripped
 Transform:
@@ -3232,6 +3254,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 8396393178826964313, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3242,49 +3268,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2603167054791016586, guid: efb46476e7b4b16429dfd90cf3d81d38, type: 3}
   m_PrefabInstance: {fileID: 1861087565}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1861156235 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4860648071991903553, guid: 6fffc35939e45ba4e989af72ca602bcf, type: 3}
-  m_PrefabInstance: {fileID: 1446792839}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1861156236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861156235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29971d6ded7a2ca49a5dde29c1b54a89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1424503257}
-  bouton: {fileID: 1610645553}
-  present: 00000000000000000000000000000000
-  crewCount: 0
-  impCount: 0
---- !u!135 &1861156237
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861156235}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 7.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1926479024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3301,6 +3284,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     - target: {fileID: 4015073053840736199, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
       propertyPath: m_Name
       value: Room4 (2)
@@ -3695,6 +3682,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1424503257}
+    - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
+      propertyPath: GameHub
+      value: 
+      objectReference: {fileID: 1610645553}
     - target: {fileID: 3389764388525215224, guid: ee29cf7b67627b5488f72c2204f011b3, type: 3}
       propertyPath: m_Enabled
       value: 1

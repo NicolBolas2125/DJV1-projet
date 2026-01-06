@@ -5,8 +5,11 @@ using UnityEngine.UI;
 
 public class UIButton : MonoBehaviour
 {
+    [Header("UI Vote")]
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
+    
+    [Header("Accès aux variables du jeu")]
     [SerializeField] Game game;
 
     void Awake()
