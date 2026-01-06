@@ -8,7 +8,7 @@ public class Room : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject bouton;
-    private Button accesPNJs;
+    private Game game;
     [SerializeField] private bool[] present = new bool[16];
     [SerializeField] private int crewCount = 0;
     [SerializeField] private int impCount = 0;
@@ -16,7 +16,7 @@ public class Room : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        accesPNJs = bouton.GetComponent<Button>();
+        game = bouton.GetComponent<Game>();
         for (int i = 0; i < 16; i++)
         {
             present[i] = false;
@@ -29,6 +29,14 @@ public class Room : MonoBehaviour
         yield return new WaitForSeconds(1f);
         _test = true;
     }
+
+    private IEnumerator WaitKill()
+    {
+        game._canKill = false;
+        yield return new WaitForSeconds(15);
+        game._canKill = true;
+    }
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -45,10 +53,12 @@ public class Room : MonoBehaviour
         }
     }
 
+
+
     // Update is called once per frame
     void Update()
     {
-        if (_test)
+        if (_test && game._canKill)
         {
             impCount = 0;
             crewCount = 0;
@@ -56,11 +66,11 @@ public class Room : MonoBehaviour
             {
                 if (present[i])
                 {
-                    if (accesPNJs.StatusPNJs[i] == 1)
+                    if (game.StatusPNJs[i] == 1)
                     {
                         crewCount += 1;
                     }
-                    if (accesPNJs.StatusPNJs[i] == 2)
+                    if (game.StatusPNJs[i] == 2)
                     {
                         impCount += 1;
                     }
@@ -73,22 +83,24 @@ public class Room : MonoBehaviour
                 {
                     if (present[i])
                     {
-                        if (accesPNJs.StatusPNJs[i] == 1)
+                        if (game.StatusPNJs[i] == 1)
                         {
-                            accesPNJs.PNJs[i].GetComponent<Movement>().Mort();
-                            accesPNJs.StatusPNJs[i] = 0;
+                            game.PNJs[i].GetComponent<Movement>().Mort();
+                            game.StatusPNJs[i] = 0;
                             present[i] = false;
                             crewCount -= 1;
                         }
                         else
                         {
-                            if (accesPNJs.StatusPNJs[i] == 2)
+                            if (game.StatusPNJs[i] == 2)
                             {
-                                accesPNJs.PNJs[i].GetComponent<Movement>().Kill();
+                                game.PNJs[i].GetComponent<Movement>().DecideTarget();
                             }
                         }
                     }
                 }
+                StartCoroutine(WaitKill());
+                game.endGame();
             }
         }
     }

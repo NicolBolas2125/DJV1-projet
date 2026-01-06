@@ -1072,7 +1072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 386962971}
   resultText: {fileID: 1271323967}
-  bouton: {fileID: 1610645559}
+  game: {fileID: 1610645559}
 --- !u!1001 &559057488
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 1610645556}
   - component: {fileID: 1610645559}
   m_Layer: 0
-  m_Name: Button
+  m_Name: GameHub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2951,6 +2951,7 @@ MonoBehaviour:
   imp: {fileID: 3112016543015468984, guid: d9b8d526db33e80489104689ea0fb40e, type: 3}
   crew: {fileID: 8119757829524202935, guid: aab155ac607085843ac9f909e4f18b3e, type: 3}
   ui: {fileID: 233156126}
+  _canKill: 0
 --- !u!1001 &1699197698
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,18 +7,18 @@ public class UIButton : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
-    [SerializeField] Button bouton;
+    [SerializeField] Game game;
 
     void Awake()
     {
-        resultText.text = "Veuillez entrer le nom du membre d'équipage que vous souhaitez voter";
+        resultText.text = "Veuillez entrer le numéro du membre d'équipage que vous souhaitez voter (de 0 à 15)";
         resultText.color = Color.black;
     }
 
     public void vote()
     {
         string input = inputField.text;
-        resultText.text = "Veuillez entrer un numéro valide (de 0 à 15)";
+        resultText.text = "Veuillez entrer le numéro du membre d'équipage que vous souhaitez voter (de 0 à 15)";
 
         if (int.TryParse(input, out var number))
         {
@@ -28,16 +28,16 @@ public class UIButton : MonoBehaviour
             }
             else
             {
-                if (bouton.StatusPNJs[number] == 0)
+                if (game.StatusPNJs[number] == 0)
                 {
                     resultText.text = "Ce membre d'équipage est déjà mort";
                 }
                 else
                 {
-                    bouton.PNJs[number].GetComponent<Movement>().Mort();
-                    bouton.StatusPNJs[number] = 0;
-                    bouton.ui.SetActive(false);
-                    bouton.endMeeting();
+                    game.PNJs[number].GetComponent<Movement>().Mort();
+                    game.StatusPNJs[number] = 0;
+                    game.ui.SetActive(false);
+                    game.endMeeting();
                 }
             }
         }

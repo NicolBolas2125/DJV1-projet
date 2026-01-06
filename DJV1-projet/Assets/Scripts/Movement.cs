@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using TMPro;
 
 
 public class Movement : MonoBehaviour
@@ -9,12 +10,12 @@ public class Movement : MonoBehaviour
     [SerializeField] private GameObject tombe;
     public bool _meeting;
     public int id;
-    public bool _canKill;
     public NavMeshAgent agent;
     private Vector3 target;
 
     [SerializeField] private Vector3[] rooms = new Vector3[10];
 
+    [SerializeField] public TextMeshProUGUI namePNJ;
 
     public void Mort()
     {
@@ -23,18 +24,6 @@ public class Movement : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-
-    // Je sais pas pourquoi il ne veut pas me laisser appeler directement ma coroutine dans bouton donc je fais une fonction
-    public void Kill()
-    {
-        StartCoroutine(KillCooldown());
-    }
-    private IEnumerator KillCooldown()
-    {
-        _canKill = false;
-        yield return new WaitForSeconds(20f);
-        _canKill = true;
-    }
 
 
     public void DecideTarget()
