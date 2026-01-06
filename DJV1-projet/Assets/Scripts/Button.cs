@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Button : MonoBehaviour
 {
-[SerializeField] private GameObject player;
+    [SerializeField] private GameObject player;
 
     //Permet de gérer les rôles (0 = mort, 1 = crewmate, 2 = imposteur)
     public int[] StatusPNJs = new int[16];
@@ -13,6 +14,9 @@ public class Button : MonoBehaviour
 
     [SerializeField] private GameObject imp;
     [SerializeField] private GameObject crew;
+
+    //Champ pour le vote
+    [SerializeField] public GameObject ui;
 
     private void startGame()
     {
@@ -65,14 +69,18 @@ public class Button : MonoBehaviour
             {
                 if (StatusPNJs[4*i + j] != 0)
                 {
+                    PNJs[4*i + j].GetComponent<Movement>().agent.SetDestination(new Vector3(i-1,1,j-1));
                     PNJs[4*i + j].transform.position = new Vector3(i-1,1,j-1);
                     PNJs[4*i + j].GetComponent<Movement>()._meeting = true;
                 }
             }
         }
+        ui.SetActive(true);
     }
 
-    private void endMeeting()
+
+
+    public void endMeeting()
     {
         for (int i=0; i < 4; i++)
         {
@@ -80,6 +88,7 @@ public class Button : MonoBehaviour
             {
                 if (StatusPNJs[4*i + j] != 0)
                 {
+                    PNJs[4*i + j].GetComponent<Movement>().DecideTarget();
                     PNJs[4*i + j].GetComponent<Movement>()._meeting = false;
                 }
             }

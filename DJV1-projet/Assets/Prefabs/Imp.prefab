@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5242172637554338659}
   - component: {fileID: 2815192170394028267}
   - component: {fileID: 3725524090074826639}
+  - component: {fileID: 4169547381184162128}
   m_Layer: 0
   m_Name: Imp
   m_TagString: Untagged
@@ -121,9 +122,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f865dad4425a2142b1fc42336224a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tombe: {fileID: 0}
   _meeting: 0
   id: 0
   _canKill: 0
+  agent: {fileID: 0}
+  rooms:
+  - {x: 8.5, y: 0, z: 3}
+  - {x: 38.5, y: 0, z: 3}
+  - {x: -21.5, y: 0, z: 3}
+  - {x: 38.5, y: 0, z: 33}
+  - {x: 8.5, y: 0, z: 33}
+  - {x: -21.5, y: 0, z: 33}
+  - {x: -36.5, y: 0, z: 18}
+  - {x: -6.5, y: 0, z: 18}
+  - {x: 23.5, y: 0, z: 18}
+  - {x: 38.5, y: 0, z: -27}
 --- !u!54 &3725524090074826639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,3 +165,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!195 &4169547381184162128
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3112016543015468984}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
